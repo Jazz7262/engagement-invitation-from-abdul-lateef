@@ -1,0 +1,135 @@
+/* Big Screens */
+#count-down {
+    color: #781d42;
+    font-family: "Mulish", sans-serif;
+    box-shadow: 0px -5px 10px rgba(128, 128, 128, 0.492) inset;
+    background: rgb(255, 175, 189);
+    background: linear-gradient(
+        145deg,
+        rgba(255, 175, 189, 1) 10%,
+        rgba(255, 195, 160, 1) 50%,
+        rgba(255, 175, 189, 1) 90%
+    );
+}
+
+#count-down .count-down-wrapper {
+    padding: 7% 7%;
+    background-image: url("https://www.transparenttextures.com/patterns/arabesque.png");
+}
+
+#count-down .main {
+    /* background-color: #c40878; */
+    border: 2px solid #8d0054;
+}
+
+#count-down .bg-container {
+    background: url("../../public/assets/images/clock-bg.jpg");
+    background-repeat: round;
+}
+
+#count-down .title {
+    background-color: rgba(255, 175, 189, 0.5);
+    padding: 20px;
+}
+
+#count-down .title h1 {
+    line-height: 1.5;
+    font-size: 2.5rem;
+    margin: 0px;
+    font-family: "Great vibes", cursive;
+}
+
+#count-down .title h5 {
+    font-weight: 600;
+}
+
+#count-down .title .content {
+    border: 1px solid #8d0054;
+}
+
+#count-down .clock {
+    /* background-color: #c40878; */
+}
+
+#count-down .clock .content {
+    padding: 20px;
+}
+
+#count-down .clock ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#count-down .clock li {
+    display: inline-block;
+    border: 1px solid #8d0054;
+    padding: 20px;
+    line-height: 1;
+    max-width: 102px;
+    min-width: 96px;
+}
+
+#count-down .clock .clock-box {
+    margin: 0px 20px;
+    border: 1px solid #8d0054;
+    padding: 20px;
+    line-height: 1;
+}
+
+#count-down .clock .num {
+    margin: 0px;
+    margin-bottom: 4px;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#count-down .clock .caption {
+    margin: 0px;
+    font-weight: 600;
+    min-width: 44.29px;
+}
+
+/* Tablet Wide Screens */
+@media (max-width: 992px) {
+}
+
+/* New Mobile Phones Wide Screens */
+@media (max-width: 428px) {
+    #count-down .count-down-wrapper {
+        padding: 7% 10%;
+    }
+    #count-down .title h1 {
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    #count-down h5 {
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    #count-down .clock .days-div {
+        padding: 20px;
+        border: 1px solid #8d0054;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        font-weight: 600;
+    }
+    #count-down .clock .num {
+        font-size: 1.5rem;
+    }
+    #count-down .clock ul {
+        justify-content: space-between;
+    }
+    #count-down .clock li {
+        padding: 15px;
+        margin: 0px;
+        max-width: 90px;
+        min-width: 65px;
+    }
+}
+
+/* Old Mobile Phones Wide Screens */
+@media (max-width: 360px) {
+}

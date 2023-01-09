@@ -1,0 +1,51 @@
+/* Big Screens */
+/* Invite-note */
+#invite-note {
+    /* background-color: #c40878; */
+    background-image: linear-gradient(
+        103.3deg,
+        rgba(162, 186, 245, 1) 0%,
+        rgba(255, 173, 214, 1) 70%,
+        rgba(252, 225, 208, 1) 100%
+    );
+    padding: 7% 7%;
+    color: #781d42;
+    /* text-shadow: 1px 1px 5px #000; */
+}
+
+#invite-note .from h2 {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+#invite-note .address {
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+/* Tablet Wide Screens */
+@media (max-width: 992px) {
+}
+
+/* New Mobile Phones Wide Screens */
+@media (max-width: 428px) {
+    /* Invite-note */
+    #invite-note {
+        padding: 7% 10%;
+    }
+    #invite-note h2 {
+        font-size: 1rem;
+    }
+    #invite-note h5 {
+        font-size: 0.75rem;
+    }
+    #invite-note p {
+        font-size: 12px;
+        margin-bottom: 0px;
+    }
+}
+
+/* Old Mobile Phones Wide Screens */
+@media (max-width: 360px) {
+}
