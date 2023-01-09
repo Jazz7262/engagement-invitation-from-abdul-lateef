@@ -1,49 +1,70 @@
 /* Big Screens */
 #card {
-    width: 100vw;
-    height: 100vh;
-    /* width: 100%;
-    height: 100%; */
+    width: 100%;
+    height: 100%;
     position: fixed;
     z-index: 2;
     background-color: #002c6aa8;
     padding: 15px;
+    color: #781d42;
 }
 
-.card-wrapper {
+#card .card-outer-wrapper {
     width: 100%;
     height: 100%;
-    background-color: white;
     border: 2px solid #002c6a;
-    color: #8d0054;
-    padding: 10%;
-    position: relative;
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    background-image: linear-gradient(
+        to left,
+        #fdcbf1 0%,
+        #fdcbf1 1%,
+        #e6dee9 100%
+    );
 }
 
-.card-wrapper .top-strip {
-    height: 155px;
-    background: #007b5e;
-    transform: rotate(141deg);
-    /* position: absolute; */
-    /* margin-top: -94px;
-    margin-right: 190px;
-    margin-left: -130px; */
-    border-bottom: 65px solid #4caf50;
-    border-top: 10px solid #4caf50;
+#card .card-inner-wrapper {
+    width: 100%;
+    height: 100%;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
 }
 
-.card-wrapper .card-title {
+#card .card-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    background-image: linear-gradient(
+        125deg,
+        #8d0054 7%,
+        rgb(255, 175, 189) 7%,
+        rgb(255, 175, 189) 11%,
+        transparent 11%,
+        transparent 89%,
+        rgb(255, 175, 189) 89%,
+        rgb(255, 175, 189) 93%,
+        #8d0054 93%,
+        #8d0054 100%
+    );
+}
+
+#card .card-title {
     /* font-family: "Tangerine", cursive; */
     font-family: "Great Vibes", cursiv e;
 }
 
-.card-wrapper .line-divider {
+#card .line-divider {
     width: 60%;
 }
 
-.card-wrapper .btn {
-    background-color: #c40878;
-    border-color: #c40878 !important;
+#card .btn {
+    border-color: #8d0054 !important;
+    background: linear-gradient(
+        145deg,
+        rgba(255, 175, 189, 1) 10%,
+        rgba(255, 195, 160, 1) 50%,
+        rgba(255, 175, 189, 1) 90%
+    );
     font-weight: 600;
     width: 120px;
     padding-top: 8px;
@@ -51,186 +72,44 @@
         0 3px 1px -2px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-wrapper .btn:active {
-    background-color: #8d0054 !important;
+
+#card .btn:active {
     box-shadow: 0 8px 10px 1px rgba(0, 0, 0, 0.14),
         0 3px 14px 2px rgba(0, 0, 0, 0.12), 0 5px 5px -3px rgba(0, 0, 0, 0.4);
 }
+
 /* Tablet Wide Screens */
 @media (max-width: 992px) {
 }
 
 /* New Mobile Phones Wide Screens */
 @media (max-width: 428px) {
-    .card-wrapper {
-        padding: 30vh 10%;
+    #card .card-content {
+        background-image: linear-gradient(
+            125deg,
+            #8d0054 10%,
+            rgb(255, 175, 189) 10%,
+            rgb(255, 175, 189) 15%,
+            transparent 15%,
+            transparent 85%,
+            rgb(255, 175, 189) 85%,
+            rgb(255, 175, 189) 90%,
+            #8d0054 90%,
+            #8d0054 100%
+        );
     }
-    .card-wrapper .card-title {
+    #card .card-title {
         font-size: 1.25rem;
     }
-
-    .card-wrapper .line-divider {
+    #card .line-divider {
         width: 70%;
     }
-    .card-wrapper .invitor-name,
-    .card-wrapper h4 {
+    #card .invitor-name,
+    #card h4 {
         font-size: 1rem;
     }
 }
 
 /* Old Mobile Phones Wide Screens */
 @media (max-width: 360px) {
-}
-
-
-/* Big Screens */
-#modal {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    /* top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; */
-    z-index: 9998;
-    background-color: #002c6aa8;
-    padding: 15px;
-}
-
-.modal-content {
-    width: 100%;
-    height: 100%;
-    /* position: fixed; */
-    /* top: 30%;
-    left: 25%; */
-    background-color: white;
-    padding: 50% 20%;
-}
-
-#modal .modal-heading {
-    padding: 1rem;
-    border: none;
-    text-align-last: center;
-}
-
-#modal .modal-heading .modal-title {
-    font-size: 2rem;
-    font-family: "Tangerine", cursive;
-    /* font-family: "Great Vibes", cursive; */
-}
-
-#modal .modal-body {
-    padding: 1rem;
-    border: 1px solid #e4ecef;
-    border-left: none;
-    border-right: none;
-    text-align-last: center;
-}
-
-#modal p {
-    margin: 0px;
-}
-
-#modal .modal-body .modal-description {
-    font-size: 1.5rem;
-}
-
-#modal .modal-footer {
-    padding: 1rem;
-    border: none;
-    text-align-last: center;
-}
-
-#modal .btn {
-    background-color: #c40878;
-}
-
-/* Tablet Wide Screens */
-@media (max-width: 992px) {
-    #modal .modal-heading .modal-title {
-        font-size: 1.75rem;
-    }
-    #modal .modal-body .modal-description {
-        font-size: 1.25rem;
-    }
-}
-
-/* New Mobile Phones Wide Screens */
-@media (max-width: 428px) {
-    .modal-content {
-        width: 100%;
-        height: 100%;
-        /* left: 10%;
-        top: 30%; */
-    }
-    #modal .modal-heading .modal-title {
-        font-size: 1.5rem;
-    }
-    #modal p {
-        font-size: 0.75rem;
-    }
-    #modal .modal-body .modal-description {
-        font-size: 1rem;
-    }
-}
-
-/* Old Mobile Phones Wide Screens */
-@media (max-width: 360px) {
-    .modal-content {
-        width: 90%;
-        height: 44%;
-        left: 5%;
-        top: 28%;
-    }
-}
-
-
-
-#subscribeModal .modal-content{
-	overflow:hidden;
-}
-a.h2{
-    color:#007b5e;
-    margin-bottom:0;
-    text-decoration:none;
-}
-#subscribeModal .form-control {
-    height: 56px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-	padding-left:30px;
-}
-#subscribeModal .btn {
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-	padding-right:20px;
-	background:#007b5e;
-	border-color:#007b5e;
-}
-#subscribeModal .form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: #007b5e;
-    outline: 0;
-    box-shadow: none;
-}
-#subscribeModal .top-strip{
-	height: 155px;
-    background: #007b5e;
-    transform: rotate(141deg);
-    margin-top: -94px;
-    margin-right: 190px;
-    margin-left: -130px;
-    border-bottom: 65px solid #4CAF50;
-    border-top: 10px solid #4caf50;
-}
-#subscribeModal .bottom-strip{
-	height: 155px;
-    background: #007b5e;
-    transform: rotate(112deg);
-    margin-top: -110px;
-    margin-right: -215px;
-    margin-left: 300px;
-    border-bottom: 65px solid #4CAF50;
-    border-top: 10px solid #4caf50;
 }

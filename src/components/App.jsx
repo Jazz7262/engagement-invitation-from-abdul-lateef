@@ -13,7 +13,6 @@ import InviteNote from "./InviteNote";
 import DeveloperInfo from "./DeveloperInfo";
 import Audio from "./Audio";
 import CustomModel from "./CustomModel";
-import CustomModel1 from "./CustomModel1";
 
 import $ from "jquery";
 
@@ -46,8 +45,7 @@ function App() {
     return (
         <>
             <Preloader />
-            {/* <CustomModel /> */}
-            <CustomModel1 />
+            <CustomModel />
             <Navbar />
             <Header />
             <Slide />
