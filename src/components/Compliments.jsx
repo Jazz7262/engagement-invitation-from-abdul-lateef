@@ -11,7 +11,7 @@ function Compliments() {
             </h5>
             <h5>Mohammed Yunus,</h5>
             <h5>R Sultan,</h5>
-            <h5>Near & Dear - Realatives & Friends.</h5>
+            <h5>Near & Dear - Relatives & Friends.</h5>
         </section>
     );
 }

@@ -159,7 +159,8 @@ function Couple() {
                             Adoni,
                         </p> */}
                             <p className="mt-1 mt-lg-2">
-                                S/O <strong>R Muhammad Haneef(late).</strong>
+                                S/O{" "}
+                                <strong>R Muhammad Haneef Sahab(late).</strong>
                             </p>
                         </div>
                     </div>
@@ -253,7 +254,8 @@ function Couple() {
                                 <strong>Shaikh Azeema Begum saheba,</strong>
                             </p>
                             <p className="mt-1 mt-lg-2">
-                                D/O <strong>Shaikh Mastan Vali(late),</strong>
+                                D/O{" "}
+                                <strong>Shaikh Mastan Vali Sahab(late),</strong>
                             </p>
                         </div>
                     </div>
