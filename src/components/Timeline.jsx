@@ -12,7 +12,7 @@ function Timeline() {
                     <p>
                         On Sunday, 15<sup>th</sup> January, 2023,
                         <br />
-                        21<sup>nd</sup> Jamaad-ul-Aakhar, 1444 Hijri,
+                        22<sup>nd</sup> Jamaad-ul-Aakhar, 1444 Hijri,
                         <br />
                         Time: 02:00 PM.
                     </p>
